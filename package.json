@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.1.3",
+    "@appointlet/appointlet.js": "^3.0.7",
     "@types/node": "^22.5.0",
     "@types/react": "^18.2.42",
     "@types/react-dom": "^18.2.17",
