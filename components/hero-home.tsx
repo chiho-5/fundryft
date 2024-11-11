@@ -1,29 +1,29 @@
 import { useEffect } from "react";
 // import Appointlet from "@appointlet/appointlet.js";
-import "@appointlet/appointlet.js/dist/appointlet.min.css";
+// import "@appointlet/appointlet.js/dist/appointlet.min.css";
 import VideoThumb from "@/public/images/hero-image-01.jpg";
 import ModalVideo from "@/components/modal-video";
 
 export default function HeroHome() {
   // Initialize Appointlet with your scheduling page URL
-  const Appointlet = require('@appointlet/appointlet.js');
+  // const Appointlet = require('@appointlet/appointlet.js');
 
-  const appointlet = new Appointlet("https://appt.link/meet-with-febble-003-Azd48qiR/phone-call");
+  // const appointlet = new Appointlet("https://appt.link/meet-with-febble-003-Azd48qiR/phone-call");
 
-  const handleScheduleCall = async () => {
-    try {
-      const meetingData = await appointlet.openModal();
-      if (meetingData) {
-        console.log("Meeting scheduled:", meetingData);
-        // Handle successful scheduling here (e.g., show confirmation to user)
-      } else {
-        console.log("Scheduling was canceled.");
-        // Handle the case where the user canceled scheduling
-      }
-    } catch (error) {
-      console.error("Failed to open Appointlet modal:", error);
-    }
-  };
+  // const handleScheduleCall = async () => {
+  //   try {
+  //     const meetingData = await appointlet.openModal();
+  //     if (meetingData) {
+  //       console.log("Meeting scheduled:", meetingData);
+  //       // Handle successful scheduling here (e.g., show confirmation to user)
+  //     } else {
+  //       console.log("Scheduling was canceled.");
+  //       // Handle the case where the user canceled scheduling
+  //     }
+  //   } catch (error) {
+  //     console.error("Failed to open Appointlet modal:", error);
+  //   }
+  // };
 
   return (
     <section>
@@ -58,14 +58,14 @@ export default function HeroHome() {
                     </span>
                   </a>
                 </div>
-                <div data-aos="fade-up" data-aos-delay={600}>
+{/*                 <div data-aos="fade-up" data-aos-delay={600}>
                   <button
                     className="btn relative w-full bg-gradient-to-b from-gray-800 to-gray-800/60 bg-[length:100%_100%] bg-[bottom] text-gray-300 hover:bg-[length:100%_150%] sm:ml-4 sm:w-auto"
                     onClick={handleScheduleCall}
                   >
                     Schedule Call
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
