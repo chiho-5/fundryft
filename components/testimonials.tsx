@@ -10,27 +10,27 @@ import Image, { StaticImageData } from "next/image";
 const plans = [
   {
     // img: BasicPlanImg,
-    name: "Basic Plan",
-    priceMonthly: "$9",
-    priceYearly: "$90",
-    description: "Essential tools for small businesses to get started.",
-    features: ["5 Projects", "Basic Support", "1 GB Storage"],
+    name: "Starter Package",
+    priceMonthly: "N300,000",
+    // priceYearly: "$90",
+    description: "Essential tools for small startups to get started.",
+    features: ["Initial consultation", "Business assessment", "Picth deck and executive summary","1_month support period and follow up"],
   },
   {
     // img: ProPlanImg,
-    name: "Pro Plan",
-    priceMonthly: "$29",
-    priceYearly: "$290",
+    name: "Standard Package",
+    priceMonthly: "N450,000",
+    // priceYearly: "$290",
     description: "Advanced features for growing businesses.",
-    features: ["20 Projects", "Priority Support", "10 GB Storage"],
+    features: ["All features in Starter", "Comprehensive data room setup", "Financial Projections and market analysis","Prodct roadmap and competitive positionig","3-months support period with bi-weekly check-ins"],
   },
   {
     // img: EnterprisePlanImg,
     name: "Enterprise Plan",
-    priceMonthly: "$99",
-    priceYearly: "$990",
+    priceMonthly: "N600,000",
+    // priceYearly: "$990",
     description: "Full access and premium support for large teams.",
-    features: ["Unlimited Projects", "24/7 Support", "100 GB Storage"],
+    features: ["All features in Standard", "Advanced data room setup", "Advisor bios and strategic growth plan documentation","Personalized Coaching on investor presentations","6-months support period with dedicated strategic consulting"],
   },
 ];
 
@@ -55,16 +55,16 @@ export default function PricingPage() {
           <div className="relative inline-flex flex-wrap justify-center rounded-full bg-gray-800/40 p-1">
             <button
               className={`flex h-8 items-center gap-2.5 whitespace-nowrap rounded-full px-3 text-sm font-medium transition-colors ${billingCycle === "monthly" ? "bg-gradient-to-b from-gray-900 via-gray-800/60 to-gray-900 text-indigo-500" : "text-gray-600 hover:text-indigo-500"}`}
-              onClick={() => setBillingCycle("monthly")}
+              
             >
               Monthly
             </button>
-            <button
+{/*             <button
               className={`flex h-8 items-center gap-2.5 whitespace-nowrap rounded-full px-3 text-sm font-medium transition-colors ${billingCycle === "yearly" ? "bg-gradient-to-b from-gray-900 via-gray-800/60 to-gray-900 text-indigo-500" : "text-gray-600 hover:text-indigo-500"}`}
               onClick={() => setBillingCycle("yearly")}
             >
               Yearly
-            </button>
+            </button> */}
           </div>
         </div>
 
@@ -75,7 +75,7 @@ export default function PricingPage() {
               <h3 className="text-xl font-semibold">{plan.name}</h3>
               <p className="text-sm text-gray-400">{plan.description}</p>
               <div className="my-4 text-3xl font-bold text-indigo-500">
-                {billingCycle === "monthly" ? plan.priceMonthly : plan.priceYearly}
+                {plan.priceMonthly}
                 <span className="text-base font-medium"> / {billingCycle}</span>
               </div>
               <ul className="mb-6 space-y-2">
@@ -93,9 +93,11 @@ export default function PricingPage() {
                   </li>
                 ))}
               </ul>
-              <button className="w-full rounded-full bg-indigo-500 px-4 py-2 text-white font-medium hover:bg-indigo-600">
+              <link href="https://omniform1.com/forms/v1/landingPage/673271b91d1247c5759ce7d4/67327eb6f692ad244ffa0acd">
+                <button className="w-full rounded-full bg-indigo-500 px-4 py-2 text-white font-medium hover:bg-indigo-600">
                 Get Started
               </button>
+                </link>
             </div>
           ))}
         </div>
