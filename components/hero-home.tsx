@@ -26,7 +26,7 @@ export default function HeroHome() {
   // };
 
   return (
-    <section className="bg-gradient-to-t from-indigo-500 via-purple-600 to-indigo-800">
+    <section className="bg-gradient-to-t from-indigo-500 via-purple-400 to-indigo-700">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="py-12 md:py-20">
           <div className="pb-12 text-center md:pb-20">
