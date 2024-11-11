@@ -93,11 +93,12 @@ export default function PricingPage() {
                   </li>
                 ))}
               </ul>
-              <link href="https://omniform1.com/forms/v1/landingPage/673271b91d1247c5759ce7d4/67327eb6f692ad244ffa0acd">
+            
                 <button className="w-full rounded-full bg-indigo-500 px-4 py-2 text-white font-medium hover:bg-indigo-600">
+                    <link href="https://omniform1.com/forms/v1/landingPage/673271b91d1247c5759ce7d4/67327eb6f692ad244ffa0acd" />
                 Get Started
               </button>
-                </link>
+              
             </div>
           ))}
         </div>
