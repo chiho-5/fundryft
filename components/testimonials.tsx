@@ -57,7 +57,7 @@ export default function PricingPage() {
               className={`flex h-8 items-center gap-2.5 whitespace-nowrap rounded-full px-3 text-sm font-medium transition-colors ${billingCycle === "monthly" ? "bg-gradient-to-b from-gray-900 via-gray-800/60 to-gray-900 text-indigo-500" : "text-gray-600 hover:text-indigo-500"}`}
               
             >
-              Monthly
+              One time
             </button>
 {/*             <button
               className={`flex h-8 items-center gap-2.5 whitespace-nowrap rounded-full px-3 text-sm font-medium transition-colors ${billingCycle === "yearly" ? "bg-gradient-to-b from-gray-900 via-gray-800/60 to-gray-900 text-indigo-500" : "text-gray-600 hover:text-indigo-500"}`}
