@@ -1,11 +1,13 @@
 import { useEffect } from "react";
-import Appointlet from "@appointlet/appointlet.js";
+// import Appointlet from "@appointlet/appointlet.js";
 import "@appointlet/appointlet.js/dist/appointlet.min.css";
 import VideoThumb from "@/public/images/hero-image-01.jpg";
 import ModalVideo from "@/components/modal-video";
 
 export default function HeroHome() {
   // Initialize Appointlet with your scheduling page URL
+  const Appointlet = require('@appointlet/appointlet.js');
+
   const appointlet = new Appointlet("https://appt.link/meet-with-febble-003-Azd48qiR/phone-call");
 
   const handleScheduleCall = async () => {
