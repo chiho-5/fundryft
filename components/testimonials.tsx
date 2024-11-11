@@ -71,7 +71,7 @@ export default function PricingPage() {
         <div className="grid gap-8 md:grid-cols-3">
           {plans.map((plan, index) => (
             <div key={index} className="relative overflow-hidden rounded-lg border border-gray-700 p-6">
-              <Image src={plan.img} alt={plan.name} className="mb-4 rounded-lg" />
+{/*               <Image src={plan.img} alt={plan.name} className="mb-4 rounded-lg" /> */}
               <h3 className="text-xl font-semibold">{plan.name}</h3>
               <p className="text-sm text-gray-400">{plan.description}</p>
               <div className="my-4 text-3xl font-bold text-indigo-500">
