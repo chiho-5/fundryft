@@ -76,7 +76,7 @@ export default function PricingPage() {
               <p className="text-sm text-gray-400">{plan.description}</p>
               <div className="my-4 text-3xl font-bold text-indigo-500">
                 {plan.priceMonthly}
-                <span className="text-base font-medium"> / {billingCycle}</span>
+                <span className="text-base font-medium"> </span>
               </div>
               <ul className="mb-6 space-y-2">
                 {plan.features.map((feature, i) => (
